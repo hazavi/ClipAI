@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev"
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -24,7 +24,7 @@ export const EditorLeftPanel = ({
             style={{ color: accentColor }}
           />
           <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-white/35">
-            Removerized
+            ClipAI
           </span>
         </div>
 

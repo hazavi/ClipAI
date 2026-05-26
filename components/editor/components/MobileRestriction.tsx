@@ -22,7 +22,7 @@ export const MobileRestriction = ({ accentColor }: MobileRestrictionProps) => {
             style={{ color: accentColor }}
           />
           <span className="text-sm font-bold tracking-[0.2em] uppercase text-white/40">
-            Removerized
+            ClipAI
           </span>
         </div>
 
@@ -35,10 +35,10 @@ export const MobileRestriction = ({ accentColor }: MobileRestrictionProps) => {
 
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-bold tracking-tight text-white">
-            Desktop Optimization Required
+            Desktop Required
           </h2>
           <p className="max-w-xs text-[0.9rem] leading-relaxed text-white/50">
-            Removerized uses heavy on-device AI models designed for high-performance desktop environments. For the best experience, please visit us on your computer.
+            ClipAI runs heavy on-device AI models optimised for desktop environments. For the best experience, please visit on a desktop browser.
           </p>
         </div>
 

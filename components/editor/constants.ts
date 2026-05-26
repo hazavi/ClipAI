@@ -265,7 +265,7 @@ export const SEO_CONTENT: Record<
   },
 }
 
-export const IDB_NAME = "RemoverizerModelDB"
+export const IDB_NAME = "ClipAIModelDB"
 
 export const IDB_STORE = "models"
 

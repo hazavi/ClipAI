@@ -6,17 +6,17 @@ export const metadata: Metadata = {
   title: "AI Image Upscaler",
   description: "Enhance image resolution up to 4x with on-device AI. Zero cloud dependency, 100% private.",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev"}/upscaler`,
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev"}/upscaler`,
   },
   openGraph: {
-    title: "AI Image Upscaler — Removerized",
+    title: "AI Image Upscaler | ClipAI",
     description: "Super-resolution AI that upscales images locally in your browser.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Removerized AI Image Upscaler",
+        alt: "ClipAI AI Image Upscaler",
       },
     ],
   },
@@ -26,7 +26,7 @@ export default function UpscalerPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Removerized Image Upscaler",
+    "name": "ClipAI Image Upscaler",
     "operatingSystem": "Web",
     "applicationCategory": "MultimediaApplication",
     "offers": {

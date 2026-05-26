@@ -1,123 +1,107 @@
-<h1 align="center">✨ Removerized</h1>
+# ClipAI
 
-<p align="center">
-🖼️ AI Image Toolkit that runs fully in your browser — free, private, and offline-first.
-</p>
+An open-source, local-first AI image toolkit that runs entirely in the browser using ONNX Runtime Web.
 
-<p align="center">
-<a href="https://getremoverized.yoss.pro/" target="_blank">Live Demo</a>
-</p>
-
-![banner](docs/banner.png)
+**[Live Demo](https://clipai.pages.dev)**
 
 ---
 
-## 🚀 Overview
+## Overview
 
-**Removerized** is an open-source, local-first AI image toolkit that runs entirely in the browser using ONNX Runtime Web.
-
-No uploads. No servers. No limits.
-
-All processing happens directly on your device.
+ClipAI is a privacy-focused image processing toolkit. All AI inference runs directly in your browser via WebAssembly. No data is uploaded, no server is involved, and no account is required.
 
 ---
 
-## ✨ Features
+## Features
 
-* 🧠 **Multiple AI Models** — choose the model that best fits your needs
-* 🖼️ **Background Removal** — fast, accurate, and fully local
-* 🔍 **Image Upscaling** — enhance resolution with AI
-* 📦 **Batch Processing** — process multiple images at once
-* 💾 **Model Caching** — models are stored in IndexedDB for instant reuse
-* 🔌 **Offline Ready** — works without internet after first load
-* ⚡ **Client-Side Only** — zero backend, zero data collection
-* 🎛️ **Advanced Controls** — tweak quality, format, and output
-
----
-
-## 🧩 Tech Stack
-
-<div align="center">
-<img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=for-the-badge" alt="Next.js Badge">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge" alt="TypeScript Badge">
-<img src="https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff&style=for-the-badge" alt="shadcn/ui Badge">
-<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge" alt="Tailwind CSS Badge">
-<img src="https://img.shields.io/badge/ONNX-Runtime%20Web-005CED?style=for-the-badge" alt="ONNX Runtime Web Badge">
-</div>
+- **Background Removal** - Fast and accurate on-device background removal with multiple model choices
+- **Image Upscaling** - AI-powered 4x super-resolution with edge-preserving detail
+- **Photo Colorization** - Deep learning colorization for black-and-white and sepia photographs
+- **Batch Processing** - Process multiple images in a single queue
+- **Model Caching** - Models are stored in IndexedDB for instant reuse across sessions
+- **Offline Support** - Fully functional without internet after the initial model download
+- **Multiple AI Models** - Choose from quantized or full-precision models based on your hardware
 
 ---
 
-## 🧠 How It Works
+## Tech Stack
 
-* Models are loaded directly in the browser
-* Inference runs using WebAssembly (WASM)
-* Assets are cached locally via IndexedDB
-* No data ever leaves your device
-
----
-
-## 🎯 Philosophy
-
-Removerized is built around a simple idea:
-
-> AI tools should be fast, private, and accessible to everyone.
-
-This project focuses on:
-
-* 🛡️ Privacy-first processing
-* ⚡ Performance through local execution
-* 🧑‍💻 Developer-friendly experimentation
+| Technology | Purpose |
+|---|---|
+| Next.js 16 | Application framework |
+| TypeScript | Type safety |
+| ONNX Runtime Web | On-device AI inference via WebAssembly |
+| shadcn/ui | UI component primitives |
+| Tailwind CSS | Styling |
+| IndexedDB | Local model caching |
+| Serwist | Service worker and offline support |
 
 ---
 
-## 🛠️ Getting Started
+## How It Works
+
+1. Models are fetched from Hugging Face on first use
+2. Inference runs via ONNX Runtime Web using WebAssembly
+3. Models are cached locally in IndexedDB for reuse
+4. All image data is processed in-memory and never transmitted
+
+---
+
+## Getting Started
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+npm start
 ```
 
 ---
 
-## 📌 Roadmap
+## Available Models
 
-* 🎨 Image colorization
-* 🧓 Photo restoration
-* 🏷️ Image → Alt text (captioning)
-* 🧪 Advanced mask editing tools
-* 📲 PWA support
-* 🧩 Browser extension
+**Background Removal**
+- ORMBG (Quantized / FP16)
+- ISNet (Quantized / FP16)
+- BiRefNet v2 Lite
+- RMBG 1.4 (Quantized / FP16)
+- MODNet (Quantized)
 
----
+**Image Upscaling**
+- Swin2SR x4 (Quantized / FP16)
 
-## 🤝 Contributing
-
-Contributions, ideas, and feedback are welcome!
-
-Feel free to open issues or submit pull requests.
+**Photo Colorization**
+- DeOldify Artistic (Quantized / FP16)
 
 ---
 
-## ⚖️ License
+## Roadmap
 
-![GPLv3](https://www.gnu.org/graphics/gplv3-with-text-136x68.png)
-
-```monospace
-Removerized is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, version 3 of the License.
-
-Removerized is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Removerized. If not, see <https://www.gnu.org/licenses/>.
-```
+- Photo restoration
+- Image captioning
+- Advanced mask editing tools
+- Browser extension
 
 ---
 
-<p align="center">
-Made with ❤️ by Yoss
-</p>
+## Contributing
+
+Contributions, issues, and pull requests are welcome. Please open an issue before submitting large changes to discuss the approach.
+
+---
+
+## License
+
+ClipAI is free software licensed under the GNU General Public License v3.0.
+
+See [LICENSE](./LICENSE) for full terms or visit [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
+
+---
+
+Built by [@yossthedev](https://yossthedev.github.io)
+

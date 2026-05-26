@@ -1,23 +1,23 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "removerized",
+  name: "ClipAI",
 
   description:
-    "Effortlessly Remove Image Backgrounds with AI - Free & Limitless with Offline Support",
+    "Private, on-device AI image tools. Background removal, upscaling, and colorization. No uploads, no servers.",
   mainNav: [
     {
       title: "License",
-      href: "https://github.com/yossTheDev/boostedpic/blob/main/LICENSE",
-      external: true
+      href: "https://github.com/yossTheDev/removerized/blob/main/LICENSE",
+      external: true,
     },
     {
-      title: "Donation",
-      href: "https://qvapay.com/payme/yoannisgnw",
-      external: true
+      title: "Changelog",
+      href: "https://github.com/yossTheDev/removerized/releases",
+      external: true,
     },
     {
-      title: "Send Feedback",
+      title: "Feedback",
       href: "https://tally.so/r/nrlKdM",
       external: true,
     },
@@ -25,6 +25,6 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/yossthedev",
     github: "https://github.com/yossTheDev/removerized",
-    telegram: "https://t.me/yosstdv"
+    telegram: "https://t.me/yosstdv",
   },
 }

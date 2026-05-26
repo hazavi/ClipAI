@@ -389,7 +389,7 @@ export const Editor = ({ initialTool = "remover" }: EditorProps) => {
       const link = (globalThis as any).document.createElement("a")
       link.href = URL.createObjectURL(convertedBlob)
       const ext = format === "image/webp" ? "webp" : format === "image/jpeg" ? "jpg" : "png"
-      link.download = `removerized-upscaled-${Date.now()}.${ext}`
+      link.download = `clipai-upscaled-${Date.now()}.${ext}`
       link.click()
       return
     }
@@ -407,7 +407,7 @@ export const Editor = ({ initialTool = "remover" }: EditorProps) => {
       const link = (globalThis as any).document.createElement("a")
       link.href = URL.createObjectURL(convertedBlob)
       const ext = format === "image/webp" ? "webp" : format === "image/jpeg" ? "jpg" : "png"
-      link.download = `removerized-colorized-${Date.now()}.${ext}`
+      link.download = `clipai-colorized-${Date.now()}.${ext}`
       link.click()
       return
     }

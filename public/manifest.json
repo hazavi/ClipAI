@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Removerized - Free AI Background Remover Tool",
-  "short_name": "Removerized",
-  "description": "Effortlessly Remove Image Backgrounds with AI - Free & Limitless with Offline Support",
+  "name": "ClipAI - AI Image Toolkit",
+  "short_name": "ClipAI",
+  "description": "Private, on-device AI image tools. Background removal, upscaling, and colorization.",
   "icons": [
     {
       "src": "icons/logo.png",

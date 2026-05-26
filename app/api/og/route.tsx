@@ -84,7 +84,7 @@ export async function GET(req: NextRequest) {
                 color: "rgba(255,255,255,0.4)",
               }}
             >
-              Removerized
+              ClipAI
             </span>
           </div>
 

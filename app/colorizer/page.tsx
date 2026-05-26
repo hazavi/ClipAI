@@ -6,17 +6,17 @@ export const metadata: Metadata = {
   title: "AI Image Colorizer",
   description: "Restore old black and white photos instantly with AI. Professional results, locally processed.",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev"}/colorizer`,
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev"}/colorizer`,
   },
   openGraph: {
-    title: "AI Image Colorizer — Removerized",
+    title: "AI Image Colorizer | ClipAI",
     description: "Deep learning colorization that restores old photos in your browser.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Removerized AI Image Colorizer",
+        alt: "ClipAI AI Image Colorizer",
       },
     ],
   },
@@ -26,7 +26,7 @@ export default function ColorizerPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Removerized Image Colorizer",
+    "name": "ClipAI Image Colorizer",
     "operatingSystem": "Web",
     "applicationCategory": "MultimediaApplication",
     "offers": {

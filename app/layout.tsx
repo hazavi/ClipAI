@@ -14,13 +14,13 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { SerwistProvider } from "./serwist"
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev"),
   title: {
-    default: `${siteConfig.name} — AI BG Remover, Upscaler & Colorizer`,
-    template: `%s — ${siteConfig.name}`,
+    default: `${siteConfig.name} — AI Image Toolkit`,
+    template: `%s | ${siteConfig.name}`,
   },
   description:
-    "Free, private, and on-device AI tools to remove backgrounds, upscale images up to 4×, and colorize old photos. No uploads, no servers, 100% client-side.",
+    "Free, private, and on-device AI tools to remove backgrounds, upscale images up to 4x, and colorize photos. No uploads, no servers, 100% client-side.",
   keywords: [
     "background remover",
     "image upscaler",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "yossthedev", url: "https://github.com/yossTheDev" }],
   creator: "yossthedev",
-  publisher: "Removerizer",
+  publisher: "ClipAI",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
@@ -40,22 +40,22 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev",
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev",
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — All-in-One AI Image Lab`,
+    title: `${siteConfig.name} — All-in-One AI Image Toolkit`,
     description:
-      "Instant, private, and free AI tools: Background Removal, 4× Upscaling, and Photo Colorization. All running in your browser.",
+      "Instant, private, and free AI tools: Background Removal, 4x Upscaling, and Photo Colorization. All running in your browser.",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev"}/og.png`,
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev"}/og.png`,
         width: 1200,
         height: 630,
-        alt: "Removerizer AI Image Tools",
+        alt: "ClipAI — AI Image Toolkit",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} — Private AI Image Tools`,
     description:
       "Remove backgrounds, upscale, and colorize images locally with AI. No data leaves your device.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev"}/og.png`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev"}/og.png`],
     creator: "@yossthedev",
   },
   icons: { icon: "/icon.ico" },

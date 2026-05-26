@@ -31,9 +31,9 @@ export const MenuWithButton: React.FC<MainButtonProps> = ({ items }) => {
           </Button>
         </SheetTrigger>
         <SheetContent>
-          <a href="/" className="flex items-center">
-            <Icons.logo className="size-4"></Icons.logo>
-            <span className="ml-2 font-bold">removerized</span>
+          <a href="/" className="flex items-center gap-2">
+            <Icons.logo className="size-4 text-white" />
+            <span className="text-sm font-semibold text-white">ClipAI</span>
           </a>
 
           <ScrollArea className="my-4 h-[calc(100vh-9rem)] pb-10 pl-2">

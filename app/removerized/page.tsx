@@ -6,17 +6,17 @@ export const metadata: Metadata = {
   title: "AI Background Remover",
   description: "Remove backgrounds from any image with on-device AI. 100% private, free, and works offline.",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://removerized.pages.dev"}/removerized`,
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://clipai.pages.dev"}/removerized`,
   },
   openGraph: {
-    title: "AI Background Remover — Removerized",
+    title: "AI Background Remover | ClipAI",
     description: "Instant and private background removal in your browser.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Removerized AI Background Remover",
+        alt: "ClipAI AI Background Remover",
       },
     ],
   },
@@ -26,7 +26,7 @@ export default function RemoverPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Removerized Background Remover",
+    "name": "ClipAI Background Remover",
     "operatingSystem": "Web",
     "applicationCategory": "MultimediaApplication",
     "offers": {
