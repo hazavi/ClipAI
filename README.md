@@ -2,8 +2,6 @@
 
 An open-source, local-first AI image toolkit that runs entirely in the browser using ONNX Runtime Web.
 
-**[Live Demo](https://clipai.pages.dev)**
-
 ---
 
 ## Overview
